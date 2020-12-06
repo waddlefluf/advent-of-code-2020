@@ -1,7 +1,6 @@
 import re
 
 file = open("input.txt", "r").read().split("\n\n")
-lines = [line.rstrip("\n") for line in file]
 
 keys1 = ['ecl', 'pid', 'eyr', 'hcl', 'byr', 'iyr', 'hgt']
 
@@ -34,5 +33,5 @@ def part2(input):
     return valid
 
 
-print(part1(lines, keys1))
-print(part2(lines))
+print(part1(file, keys1))
+print(part2(file))
